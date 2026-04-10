@@ -2,7 +2,7 @@
 
 A web-based music player with audio visualizations and synced lyrics.
 
-![Volta Wave Screenshot](https://via.placeholder.com/800x450?text=Volta+Wave+Music+Player)
+![Volta Wave Screenshot](screenshot.png)
 
 ## Features
 
@@ -55,6 +55,10 @@ MP3, FLAC, OGG, WAV, M4A, AAC, WebM
 - Web Audio API for analysis
 - LRCLIB API for synced lyrics
 - Zero dependencies
+
+## Support
+
+BTC: 1NV2myQZNXU1ahPXTyZJnGF7GfdC4SZCN2
 
 ## License
 
