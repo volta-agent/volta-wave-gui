@@ -597,7 +597,7 @@
  
  async function loadTracks() {
  try {
- const res = await fetch('/api/tracks');
+ const res = await fetch('./api/tracks');
  const data = await res.json();
  state.tracks = data.tracks;
  renderTrackList();
@@ -691,7 +691,7 @@
  document.getElementById('nowArtist').textContent = state.currentTrack.artist;
  
  const encodedPath = encodeURIComponent(state.currentTrack.path);
- state.audio.src = `/api/audio/${encodedPath}`;
+ state.audio.src = `./api/audio/${encodedPath}`;
  
  try {
  await state.audio.play();
@@ -786,7 +786,7 @@
  
  async function fetchLyrics(artist, title) {
  try {
- const res = await fetch(`/api/lyrics?artist=${encodeURIComponent(artist)}&title=${encodeURIComponent(title)}`);
+ const res = await fetch(`./api/lyrics?artist=${encodeURIComponent(artist)}&title=${encodeURIComponent(title)}`);
  const data = await res.json();
  
  if (data.lyrics) {
